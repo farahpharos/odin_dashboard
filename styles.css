@@ -1,0 +1,109 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+}
+
+.container {
+    border: 5px solid green;
+    display: grid;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar content';
+    grid-template-columns: auto 1fr;
+    /* grid-template-rows: auto auto; */
+    /* height: 100vh; */
+
+}
+.sidebar {
+    border: 3px solid orange;
+    grid-area: sidebar;
+    background-color: rgb(48, 146, 202);
+    gap: 10px;
+    width: 25vw;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+.menu {
+    /* border: 3px solid blue; */
+    margin-left: 15px;
+
+    margin-top: 20px;
+    color: white;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.menu2 {
+    /* border: 3px dotted blue; */
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.icon {
+    /* vertical-align: text-top; */
+    margin-right: 10px;
+    height: 1rem;
+}
+h2 {
+    color: white;
+    font-size: 1.1rem;
+}
+#logo {
+    /* border: 3px dotted blue; */
+    display: flex;
+    align-items: center;
+}
+#dashboard_icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2rem;
+}
+.header {
+    border: 3px solid yellow;
+    grid-area: header;
+    height: 100px;
+}
+
+.content {
+    border: 3px solid grey;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+/* Project Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(75px,1fr));
+    grid-template-rows: repeat(3,clamp(100px, 200px, 350px));
+}
+
+
+
+
+
+/* right bar of content */
+.right_bar {
+    border: 2px dotted pink;
+    display: flex;
+    flex-direction: column;
+
+}
+.announcements {
+    border: 2px dotted brown;
+    flex: 1;
+}
+
+
+.trending {
+    border: 2px dotted black;
+    flex: 1;
+    
+}
